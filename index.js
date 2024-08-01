@@ -21,6 +21,6 @@ app.use("/public", router);
 app.get("/", (req, res) => {
   res.send("index"); // Assurez-vous que dynamic.ejs existe dans le dossier 'views'
 });
-app.listen(process.env.API_PORT, () => {
-  console.log(`Server is running on port`, process.env.API_PORT);
+app.listen(process.env.PORT, () => {
+  console.log(`Server is running on port`, process.env.PORT);
 });
